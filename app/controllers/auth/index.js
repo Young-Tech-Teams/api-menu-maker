@@ -10,13 +10,6 @@ const config = {
     clientID: '14okauX9UmvpAKYtHQZPCiESuie5LOQd',
     issuerBaseURL: 'https://dev-960vw2fg.eu.auth0.com'
 };
-// const papa = require("papaparse")
-// const ftp = require("basic-ftp")
-// var nodemailer = require('nodemailer');
-// const dotenv = require('dotenv')
-// const client = new ftp.Client()
-// client.ftp.verbose = false
-// dotenv.config()
 
 module.exports = class AuthController {
     constructor(app) {
