@@ -1,7 +1,7 @@
 const { Sequelize, DataTypes } = require('sequelize');
 const { sequelize } = require("../db.js")
 
-const Menus = sequelize.define('menus', {
+const Ustensiles = sequelize.define('ustensiles', {
   // Model attributes are defined here
   id: {
     type: DataTypes.INTEGER,
@@ -9,20 +9,24 @@ const Menus = sequelize.define('menus', {
     primaryKey: true
   },
   nom: {
-    type: DataTypes.STRING,
-    allowNull: false
-  },
-  prix: {
-    type: DataTypes.FLOAT
+    type: DataTypes.STRING
     // allowNull defaults to true
   },
-  url: {
-    type: DataTypes.STRING,
-    allowNull: false
+  ImagePath: {
+    type: DataTypes.STRING
+    // allowNull defaults to true
+  },
+  urlMamossa: {
+    type: DataTypes.STRING
+    // allowNull defaults to true
+  },
+  prixMamossa: {
+    type: DataTypes.INTEGER
+    // allowNull defaults to true
   }
 }, {
   timestamps: false,
   // Other model options go here
 });
 
-module.exports = Menus
+module.exports = Ustensiles

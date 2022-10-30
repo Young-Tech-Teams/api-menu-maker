@@ -39,10 +39,25 @@ module.exports = class Server {
     new routes.menus.GetById(this.app)
     new routes.menus.DestroyById(this.app)
 
+    new routes.recettes.CreateRecettes(this.app)
+    new routes.recettes.GetRecettes(this.app)
+    new routes.recettes.GetRecettesById(this.app)
+    new routes.recettes.DestroyRecettes(this.app)
+
     new routes.ingredients.CreateIngredients(this.app)
     new routes.ingredients.GetIngredients(this.app)
     new routes.ingredients.GetIngredientsById(this.app)
     new routes.ingredients.DestroyIngredients(this.app)
+
+    new routes.ustensiles.CreateUstensiles(this.app)
+    new routes.ustensiles.GetAllUstensiles(this.app)
+    new routes.ustensiles.GetUstensilesById(this.app)
+    new routes.ustensiles.DestroyUstensiles(this.app)
+
+    new routes.produits.CreateProduits(this.app)
+    new routes.produits.GetProduits(this.app)
+    new routes.produits.GetProduitsById(this.app)
+    new routes.produits.DestroyProduits(this.app)
 
     new routes.tampon.TamponByIdMenu(this.app)
 
